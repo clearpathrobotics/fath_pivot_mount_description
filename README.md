@@ -1,5 +1,5 @@
 fath_pivot_mount_description
-=======================
+============================
 
 This package contains a single URDF macro used to add a manually-adjustable, Fath pivot mount used for cameras and other
 sensors.
@@ -9,7 +9,7 @@ sensors.
 To add the mount to your URDF, add e.g.
 
 ```xml
-<xacro:include filename="$(find fath_pivot_mount_description)/urdf/lockmount.urdf.xacro" />
+<xacro:include filename="$(find fath_pivot_mount_description)/urdf/fath_pivot_mount.urdf.xacro" />
 <xacro:fath_pivot_mount prefix="front_camera" parent_link="front_mount" angle="${pi/8}">
   <origin xyz="0 0 0" rpy="0 0 0" />
 </xacro:fath_pivot_mount>
